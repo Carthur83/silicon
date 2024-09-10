@@ -21,9 +21,15 @@ body {
   font-size: 16px;
 }
 
+h1 {
+  font-size: 56px;
+  font-weight: 900;
+  row-gap: 1;
+}
+
 header {
   height: 876px;
-  background: linear-gradient(to top, #6365f215 0%, #db48ef17 42% , #f1f4fd21 83%);
+  background: linear-gradient(to top, #6365f211 0%, #db48ef10 30% , #f1f4fd0c 83%);
 }
 
 .container {
@@ -45,6 +51,75 @@ header .container {
   gap: 3rem;
   padding-top: 1rem;
 }
+  
+
+.head-section {
+  height: 815px;
+  display: flex;
+  align-items: end;
+}
+
+.box-container {
+  
+  /* border: 2px solid black; */
+  max-width: 1320px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+
+}
+
+.title-box {
+  grid-row: span 2;
+  padding-left: 1rem;
+  padding-top: 2rem;
+  /* border: 1px solid blue; */
+  
+  p {
+    font-size: 1.1rem;
+    font-weight: 300;
+    font-style: normal;
+    margin-top: 18px;
+  }
+  
+}
+
+
+
+.box-img-mobile {
+  align-self: flex-end;
+  /* border: 1px solid blue; */
+  grid-row: span 3;
+}
+
+.button-discover {
+  align-self: flex-end;
+  padding-bottom: 2.5rem;
+  /* border: 1px solid black; */
+}
+
+.download-buttons {
+  border: none;
+  background-color: transparent;
+  margin-top: 3.3rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .btn-primary {
   background-color: var(--color-primary);
