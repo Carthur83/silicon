@@ -679,7 +679,6 @@ margin-bottom: 100px;
 /* Section - Subscribe */
 
 #subscribe {
-  margin-bottom: 7rem;
   
   .container {
     display: grid;
@@ -732,6 +731,21 @@ margin-bottom: 100px;
       }
     }
    
+}
+
+footer {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    p {
+      font-size: 14px;
+      font-weight: 400;
+      color: var(--color-gray-600);
+    }
+  }
 }
 
 
