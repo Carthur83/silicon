@@ -10,6 +10,7 @@
   --color-white: #FFFFFF;
   --color-gray-100: #F3F6FF;
   --color-gray-300: #E2E5F1;
+  --color-gray-400: #D4D7E5;
   --color-gray-500: #B4B7C9;
   --color-gray-600: #9397AD;
   --color-gray-700: #565973;
@@ -625,58 +626,112 @@ margin-bottom: 100px;
 
   }
 
-/* Accordion code from geeksforgeeks.org but modified*/
+  /* Accordion code from geeksforgeeks.org but modified*/
 
-.accordion {
-  grid-area: accordion;
-  display: grid;
-  gap: 1rem;
-  
-  
-  /* overflow: hidden; */
-  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
-}
+  .accordion {
+    grid-area: accordion;
+    display: grid;
+    gap: 1rem;
+  }
 
-.accordion-item {
-  
-}
+  .accordion-item {
+    
+  }
 
-.accordion-header {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  align-items: center;
-  box-shadow: 0px 2px 10px var(--color-gray-300);
-  background-color: var(--color-white);
-  padding: 16px;
-  font-size: 16px;
-  font-weight: 600;
-  color: var(--color-gray-900);
-  /* cursor: pointer; */
-  transition: background-color 0.3s ease;
-  border-radius: 8px;
+  .accordion-header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    box-shadow: 0px 2px 10px var(--color-gray-300);
+    background-color: var(--color-white);
+    padding: 16px;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--color-gray-900);
+    /* cursor: pointer; */
+    transition: background-color 0.3s ease;
+    border-radius: 8px;
 
-  img {
-    cursor: pointer;
+    img {
+      cursor: pointer;
+    }
+  }
+
+  /* .accordion-header:hover {
+    background-color: #e0e0e0;
+  } */
+
+  .accordion-content {
+    padding: 16px;
+    display: none;
+    background-color: #fafafa;
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--color-gray-700);
+    line-height: 1.6;
+  }
+
+  .accordion-item.active .accordion-content {
+    display: block;
   }
 }
 
-/* .accordion-header:hover {
-  background-color: #e0e0e0;
-} */
+/* Section - Subscribe */
 
-.accordion-content {
-  padding: 16px;
-  display: none;
-  background-color: #fafafa;
-  font-size: 14px;
-  font-weight: 300;
-  color: var(--color-gray-700);
-  line-height: 1.6;
-}
+#subscribe {
+  margin-bottom: 7rem;
+  
+  .container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 3rem;
+    align-items: center;
+    padding: 4rem 6rem 4rem 6rem;
+    background-color: var(--color-gray-100);
+    .image {
 
-.accordion-item.active .accordion-content {
-  display: block;
+    }
+
+    .headline {
+      font-size: 24px;
+      font-weight: 800;
+      color: var(--color-gray-900);
+    }
+
+  }
 }
+  .form {
+    display: flex;
+    
+    .form-input {
+      width: 20rem;
+      height: 3.3rem;
+      font-size: 1rem;
+      padding: .6em;
+      border: 1px solid var(--color-gray-400);
+      border-radius: 8px 0 0 8px;
+
+      &::placeholder {
+        color: var(--color-gray-500);
+        
+      }
+    } 
+
+    .btn-subscribe {
+      background-color: var(--color-primary);
+      width: 9rem;
+      height: 3.3rem;
+      border-radius: 0 8px 8px 0;
+      border: none;
+      color: var(--color-white);
+      font-size: 16px;
+      font-weight: 500;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+   
 }
 
 
